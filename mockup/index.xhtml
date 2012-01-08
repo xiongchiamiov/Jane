@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Jane</title>
+	<style type="text/css">
+		#wrapper {
+			width: 1200px;
+		}
+		#left {
+			width: 45%;
+			float: left;
+			margin-left: 5%;
+			height: 500px;
+			overflow: auto;
+		}
+		#left img {
+			width: 520px;
+		}
+		
+		#right {
+			width: 45%;
+			float: right;
+			margin-right: 5%;
+			height: 500px;
+			overflow: auto;
+		}
+		
+		#right div {
+			border-bottom: 1px dotted red;
+			padding: 8px 3px 8px 3px;
+		}
+		
+		#right .date {
+			width: 190px;
+			display: inline-block;
+			font-weight: bold;
+		}
+		
+		#footer {
+			clear: both;
+			text-align: center;
+			font-size: smaller;
+		}
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.1/mootools-yui-compressed.js"></script>
+	<script type="text/javascript">
+		window.addEvent('domready', function() {
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="left">
+			<img src="images/graph.png" />
+			<img src="images/graph.png" />
+			<img src="images/graph.png" />
+			<img src="images/graph.png" />
+			<img src="images/graph.png" />
+			<img src="images/graph.png" />
+		</div>
+		<div id="right">
+			<div class="twitter">
+				<span class="date">2012-01-07 10:14:03</span>
+				Going down for a short maintenance period.
+			</div>
+			<div class="deployment">
+				<span class="date">2012-01-07 10:32:15</span>
+				Deployed r2003, r2004, r2005.
+			</div>
+			<div class="php_errors">
+				<span class="date">2012-01-07 10:34:31</span>
+				PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /Users/pearson/temp/test.php on line 5
+			</div>
+			<div class="php_debug">
+				<span class="date">2012-01-07 10:34:31</span>
+				PHP Notice:  Use of undefined constant LOL_CONSTANT - assumed 'LOL_CONSTANT' in /Users/pearson/temp/test.php on line 3
+			</div>
+			<div class="deployment">
+				<span class="date">2012-01-07 11:41:09</span>
+				Deployed r2006.
+			</div>
+			<div class="twitter">
+				<span class="date">2012-01-07 16:09:11</span>
+				Aaaaand we're up.
+			</div>
+			<div class="shell-command">
+				<span class="date">2012-01-07 23:57:33</span>
+				root@app3&gt; service httpd restart
+			</div>
+			<div class="machine-action">
+				<span class="date">2012-01-07 23:59:16</span>
+				App41 booting.
+			</div>
+			<div class="machine-action">
+				<span class="date">2012-01-08 00:00:03</span>
+				App3 shutdown initiated.
+			</div>
+			<div class="machine-action">
+				<span class="date">2012-01-08 00:09:52</span>
+				App41 provisioning completed.
+			</div>
+			<div class="note">
+				<span class="date">2012-01-08 00:10:46</span>
+				App3 was doing weird things - throwing intermittent 500s, mostly.  I tried restarting apache to see if that'd help, but it didn't seem to, so I killed it off and started a new machine. - jp
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		I may be what is termed a spinster, but I do know the difference between horseplay and murder.
+	</div>
+</body>
+</html>
+
